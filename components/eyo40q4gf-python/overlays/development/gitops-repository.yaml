@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: eyo40q4gf-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/eyo40q4gf-python-gitops

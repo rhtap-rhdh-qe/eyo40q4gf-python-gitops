@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: eyo40q4gf-python-gitops
+  description: This is GitOps manifest for eyo40q4gf-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: eyo40q4gf-python
+    janus-idp.io/tekton: eyo40q4gf-python 
+    backstage.io/kubernetes-id: eyo40q4gf-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:eyo40q4gf-python
